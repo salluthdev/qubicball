@@ -65,7 +65,12 @@ header nav ul li
 	color: var(--black);
 	cursor: pointer;
 }
-header nav ul li:hover
+header nav ul li a
+{
+	text-decoration: none;
+	color: var(--black);
+}
+header nav ul li a:hover
 {
 	color: var(--blue);
 }
@@ -340,8 +345,7 @@ h1 span
 	border-radius: 24px;
 	padding: 24px;
 }
-.our-services .card-wrapper .card:hover,
-.our-services .card-wrapper .card:focus
+.our-services .card-wrapper .card:hover
 {
 	box-shadow: 1px 1px 12px rgba(19, 87, 215, 0.5), 1px 1px 12px rgba(19, 87, 215, 0.5);
 }

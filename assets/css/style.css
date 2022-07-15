@@ -63,7 +63,7 @@ header nav ul li
 }
 header nav ul li:hover
 {
-	color: aqua;
+	color: var(--blue);
 }
 .hero
 {
@@ -108,6 +108,7 @@ header nav ul li:hover
 .about .wrapper
 {
 	display: flex;
+	align-items: center;
 	gap: 32px;
 }
 .about .img-about
@@ -134,16 +135,6 @@ h1 span
 	background-size: cover;
 	padding: 40px 0 0;
 }
-.press-release .bg-gradient
-{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: linear-gradient(to right, rgba(0, 84, 245, 1), rgba(0, 42, 123, 1));
-	opacity: 0.8;
-}
 .press-release .wrapper
 {
 	position: relative;
@@ -151,7 +142,7 @@ h1 span
 	flex-direction: column;
 	align-items: center;
 }
-.press-release h1
+.press-release h1, .our-services h1
 {
 	font-size: 48px;
 	color: #fff;
@@ -228,12 +219,12 @@ h1 span
 {
 	width: 100%;
 }
-.dot-wrapper
+.meet-partners .slider-wrapper .dot-wrapper
 {
   margin: 0 auto;
   text-align: center;
 }
-.dot
+.meet-partners .slider-wrapper .dot
 {
   display: inline-block;
   border-radius: 50%;
@@ -241,7 +232,69 @@ h1 span
   padding: 8px;
   margin: 10px 5px;
 }
-.active
+.meet-partners .slider-wrapper .active
 {
   background: var(--blue);
+}
+.our-services
+{
+	position: relative;
+}
+.our-services .our-services-bg
+{
+	width: 100%;
+	min-height: 400px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('../img/our-services-bg.png');
+}
+.our-services .wrapper
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0;
+}
+.our-services .card-wrapper
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-top: 40px;
+}
+.our-services .card-wrapper .card
+{
+	width: 300px;
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2), 1px 1px 12px rgba(0, 0, 0, 0.2);
+	border-radius: 24px;
+	padding: 24px;
+}
+.our-services .card-wrapper .card:hover,
+.our-services .card-wrapper .card:focus
+{
+	box-shadow: 1px 1px 12px rgba(19, 87, 215, 0.5), 1px 1px 12px rgba(19, 87, 215, 0.5);
+}
+.our-services .card-wrapper .card img
+{
+	width: 40px;
+}
+.our-services .card-wrapper .card h2
+{
+	font-size: 28px;
+	line-height: 20px;
+	color: var(--blue);
+	margin-top: 16px;
+}
+.our-services .card-wrapper .card h4
+{
+	font-size: 16px;
+	color: var(--black);
 }

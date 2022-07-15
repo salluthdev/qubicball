@@ -352,4 +352,27 @@ footer
 	min-height: 240px;
 	background: url('../img/footer-bg.png') center;
 	background-size: cover;
+	padding: 60px 0;
+}
+footer .brand-info
+{
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	color: #fff;
+}
+footer .brand-info div
+{
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+footer .brand-info div img
+{
+	width: 28px;
+}
+footer h4.copyright
+{
+	color: rgba(228, 228, 228, 0.5);
+	margin-top: 20px;
 }

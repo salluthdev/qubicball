@@ -16,7 +16,11 @@ body
 }
 header
 {
+	width: 100%;
+	position: fixed;
 	background: #fff;
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2), 1px 1px 12px rgba(0, 0, 0, 0.2);
+	z-index: 10;
 }
 .wrapper
 {
@@ -73,7 +77,7 @@ header nav ul li:hover
 	align-items: center;
 	background: url(../img/hero-bg.png) center;
 	background-size: cover;
-	padding: 40px 0;
+	padding: 126px 0 40px;
 }
 .hero .wrapper
 {

@@ -142,7 +142,7 @@ h1 span
 	flex-direction: column;
 	align-items: center;
 }
-.press-release h1, .our-services h1
+.press-release h1, .our-services h1, .contact-us .contact-box h1
 {
 	font-size: 48px;
 	color: #fff;
@@ -312,4 +312,44 @@ h1 span
 {
 	width: 10px;
 	margin-right: 6px;
+}
+.contact-us
+{
+	margin: 20px 0 60px;
+}
+.contact-us .wrapper
+{
+	display: flex;
+	justify-content: center;
+}
+.contact-us .contact-box
+{
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	background: url('../img/contact-box-bg.png') center;
+	background-size: cover;
+	border-radius: 16px;
+	padding: 24px 0;
+}
+.contact-us .contact-box h1
+{
+	line-height: 40px;
+}
+.contact-us .contact-box h2
+{
+	font-size: 28px;
+}
+.contact-us .contact-box img.arrow-next
+{
+	width: 36px;
+	margin-top: 2px;
+}
+footer
+{
+	min-height: 240px;
+	background: url('../img/footer-bg.png') center;
+	background-size: cover;
 }

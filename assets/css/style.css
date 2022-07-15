@@ -109,11 +109,70 @@ header nav ul li:hover
 {
 	display: flex;
 	align-items: center;
-	gap: 32px;
+	gap: 40px;
 }
 .about .img-about
 {
 	width: 320px;
+	position: relative;
+}
+.about .img-about img
+{
+	width: 320px;
+	position: relative;
+	z-index: 1;
+}
+.about .img-about .layer-img
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(16, 88, 226, 0.05);
+	z-index: 1;
+}
+.about .img-about .layer-bg
+{
+	width: 270px;
+	height: 300px;
+	position: absolute;
+	top: -28px;
+	left: -50px;
+	background: #303133;
+	border: 1px solid #707070;
+	z-index: 0;
+}
+.about .img-about .layer-blue-bottom-right
+{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #0b46cc;
+}
+.about .img-about .layer-blue-left
+{
+	width: 80px;
+	height: 300px;
+	position: absolute;
+	top: -28px;
+	left: -50px;
+	background: #0b46cc;
+	mix-blend-mode: multiply;
+	z-index: 2;
+}
+.about .img-about .layer-blue-top-left
+{
+	width: 80px;
+	height: 28px;
+	position: absolute;
+	top: -28px;
+	left: -50px;
+	background: #0b46cc;
+	border: 1px solid #707070;
+	z-index: 3;
 }
 .about h1
 {

@@ -82,7 +82,7 @@ header .toggle-nav .fa-solid
 } 
 header .sidebar-nav
 {
-	width: 280px;
+	width: 240px;
 	height: 100vh;
 	position: fixed;
 	top: 0;
@@ -538,6 +538,10 @@ footer h4.copyright
 	{
 		padding: 14px 24px;
 	}
+	header .sidebar-nav .close-sidebar
+	{
+		right: 24px;
+	}
 	.about .wrapper
 	{
 		flex-direction: column;
@@ -583,6 +587,10 @@ footer h4.copyright
 	header .logo .logo-text
 	{
 		display: none;
+	}
+	header .sidebar-nav .close-sidebar
+	{
+		right: 16px;
 	}
 	.hero h1
 	{

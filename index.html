@@ -7,6 +7,8 @@
 	<link rel="shortcut icon" href="assets/img/logo-img.svg">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css">
 </head>
 <body>
 	<header>
@@ -36,6 +38,31 @@
 					</li>
 				</ul>
 			</nav>
+			<div class="toggle-nav mobile" onclick="openSidebar()">
+				<i class="fa-solid fa-bars fa-xl"></i>
+			</div>
+			<div class="sidebar-nav mobile">
+				<i class="fa-solid fa-xmark fa-xl close-sidebar" onclick="closeSidebar()"></i>
+				<nav>
+					<ul>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="#press-release">Press Release</a>
+						</li>
+						<li>
+							<a href="#partners">Partners</a>
+						</li>
+						<li>
+							<a href="#services">Services</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<div class="hero">

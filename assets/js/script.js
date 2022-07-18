@@ -1,3 +1,15 @@
+// Open sidebar navigation (mobile)
+var sidebarNav = document.querySelector('.sidebar-nav');
+
+function openSidebar() {
+  sidebarNav.classList.add('active');
+}
+
+function closeSidebar() {
+  sidebarNav.classList.remove('active');
+}
+
+// Slider partners
 var index = 0;
 var slides = document.querySelectorAll(".slides");
 var dot = document.querySelectorAll(".dot");
@@ -12,12 +24,12 @@ function changeSlide() {
   }
   
   for(let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    dot[i].classList.remove("active");
+    slides[i].style.display = 'none';
+    dot[i].classList.remove('active');
   }
   
-  slides[index].style.display = "block";
-  dot[index].classList.add("active");
+  slides[index].style.display = 'block';
+  dot[index].classList.add('active');
   
   index++;
   

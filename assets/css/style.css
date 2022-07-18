@@ -121,7 +121,7 @@ header .sidebar-nav nav ul
 .hero
 {
 	width: 100%;
-	height: 600px;
+	min-height: 600px;
 	display: flex;
 	align-items: center;
 	background: url(../img/hero-bg.png) center;
@@ -151,6 +151,11 @@ header .sidebar-nav nav ul
 {
 	background: linear-gradient(to right, #030810, #1058e2);
 	padding: 0 10px;
+}
+.hero lottie-player
+{
+	width: 480px;
+	height: 480px;
 }
 .about
 {
@@ -229,8 +234,12 @@ header .sidebar-nav nav ul
 }
 .about h1
 {
-	font-size: 48px;
 	margin-bottom: 8px;
+}
+.about h1, .press-release h1, .meet-partners h1, .our-services h1,
+.contact-us .contact-box h1
+{
+	font-size: 48px;
 }
 .about h1, .about p
 {
@@ -245,7 +254,7 @@ h1 span
 	position: relative;
 	background: url('../img/press-release-bg.png') center;
 	background-size: cover;
-	padding: 40px 0 0;
+	padding: 40px 0;
 }
 .press-release .wrapper
 {
@@ -254,27 +263,30 @@ h1 span
 	flex-direction: column;
 	align-items: center;
 }
-.press-release h1, .our-services h1, .contact-us .contact-box h1
+.press-release h1, .meet-partners h1, .our-services h1, .contact-us .contact-box h1
 {
 	font-size: 48px;
 	color: #fff;
 }
-.press-release .card-wrapper
+.press-release .card-wrapper, .our-services .card-wrapper
 {
 	display: flex;
 	gap: 32px;
+	flex-wrap: wrap;
+	padding: 0 40px;
 	margin-top: 40px;
 }
 .press-release .card-wrapper .card
 {
-	max-width: 220px;
+	width: 220px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 24px;
 	background: #fff;
-	border-radius: 28px 28px 0 0;
+	border-radius: 28px;
 	padding: 24px;
+	margin: 0 auto;
 }
 .press-release .card-wrapper .card h2
 {
@@ -297,7 +309,6 @@ h1 span
 }
 .meet-partners h1
 {
-	font-size: 48px;
 	color: var(--black);
 }
 .meet-partners .slider-wrapper
@@ -339,8 +350,8 @@ h1 span
 .meet-partners .slider-wrapper .dot
 {
   display: inline-block;
-  border-radius: 50%;
   background: #d3d3d3;
+  border-radius: 50%;
   padding: 8px;
   margin: 10px 5px;
 }
@@ -371,15 +382,13 @@ h1 span
 }
 .our-services .card-wrapper
 {
-	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
 	gap: 24px;
-	margin-top: 40px;
 }
 .our-services .card-wrapper .card
 {
-	width: 300px;
+	width: 100%;
+	max-width: 300px;
 	min-height: 400px;
 	display: flex;
 	flex-direction: column;
@@ -443,7 +452,7 @@ h1 span
 	background: url('../img/contact-box-bg.png') center;
 	background-size: cover;
 	border-radius: 16px;
-	padding: 24px 0;
+	padding: 24px;
 }
 .contact-us .contact-box h1
 {
@@ -502,5 +511,107 @@ footer h4.copyright
 	{
 		display: none;
 	}
-	
+	.hero .wrapper
+	{
+		flex-direction: column-reverse;
+	}
+	.hero h1
+	{
+		font-size: 60px;
+		line-height: 90px;
+		text-align: center;
+	}
+	.hero lottie-player
+	{
+		width: 320px;
+		height: 320px;
+	}
+}
+
+@media (max-width: 720px)
+{
+	.wrapper, .press-release .card-wrapper, .our-services .card-wrapper
+	{
+		padding: 0 24px;
+	}
+	header .wrapper
+	{
+		padding: 14px 24px;
+	}
+	.about .wrapper
+	{
+		flex-direction: column;
+	}
+	.about h1, .press-release h1, .meet-partners h1, .our-services h1, 
+	.contact-us .contact-box h1
+	{
+		font-size: 36px;
+	}
+	.meet-partners h1
+	{
+		text-align: center;
+	}
+	.meet-partners .slider-wrapper .dot
+	{
+		padding: 6px;
+	}
+	.contact-us .contact-box
+	{
+		gap: 6px;
+	}
+	.contact-us .contact-box h2
+	{
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 376px)
+{
+	.wrapper, .press-release .card-wrapper, .our-services .card-wrapper
+	{
+		padding: 0 16px;
+	}
+	header .wrapper
+	{
+		padding: 14px 16px;
+	}
+	header .logo .logo-img
+	{
+		width: 48px;
+	}
+	header .logo .logo-text
+	{
+		display: none;
+	}
+	.hero h1
+	{
+		font-size: 48px;
+		line-height: 70px;
+	}
+	.hero lottie-player
+	{
+		width: 280px;
+		height: 280px;
+	}
+	.about .img-about, .about .img-about img
+	{
+		width: 280px;
+	}
+	.about .img-about .layer-bg, .about .img-about .layer-blue-left
+	{
+		height: 270px;
+	}
+}
+
+@media (max-width: 312px)
+{
+	.about .img-about, .about .img-about img
+	{
+		width: 260px;
+	}
+	.about .img-about .layer-bg, .about .img-about .layer-blue-left
+	{
+		height: 250px;
+	}
 }

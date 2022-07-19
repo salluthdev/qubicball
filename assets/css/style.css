@@ -39,9 +39,14 @@ header
 {
 	width: 100%;
 	position: fixed;
+	background: transparent;
+	transition: 0.2s;
+	z-index: 10;
+}
+header.scroll
+{
 	background: #fff;
 	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2), 1px 1px 12px rgba(0, 0, 0, 0.2);
-	z-index: 10;
 }
 .wrapper
 {
@@ -57,10 +62,6 @@ header .wrapper
 	align-items: center;
 	padding: 14px 40px;
 }
-header .logo
-{
-	gap: 4px;
-}
 header .logo, header nav ul
 {
 	display: flex;
@@ -70,9 +71,24 @@ header .logo .logo-img
 {
 	width: 58px;
 }
-header .logo .logo-text
+header .logo .logo-text.white
 {
-	width: 166px;
+	width: 220px;
+	margin-left: -24px;
+}
+header .logo .logo-text.blue
+{
+	width: 160px;
+	display: none;
+	margin-left: 6px;
+}
+header.scroll .logo .logo-text.blue
+{
+	display: block;
+}
+header.scroll .logo .logo-text.white
+{
+	display: none;
 }
 header nav ul
 {
@@ -83,13 +99,16 @@ header nav ul li
 	font-size: 18px;
 	font-weight: 700;
 	list-style: none;
-	color: var(--black);
 	cursor: pointer;
 }
 header nav ul li a
 {
 	text-decoration: none;
-	color: var(--black);
+	color: #fff;
+}
+header.scroll nav ul li a
+{
+	color: var(--blue);
 }
 header nav ul li a:hover
 {

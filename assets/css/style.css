@@ -297,7 +297,6 @@ h1 span
 	display: flex;
 	gap: 32px;
 	flex-wrap: wrap;
-	padding: 0 40px;
 	margin-top: 40px;
 }
 .press-release .card-wrapper .card
@@ -337,6 +336,7 @@ h1 span
 }
 .meet-partners .slider-wrapper
 {
+	width: 80%;
 	margin: 40px 0;
 }
 .meet-partners .slider-wrapper .slider
@@ -599,6 +599,13 @@ footer h4.copyright
 	{
 		font-size: 18px;
 		font-weight: 500;
+	}
+}
+@media (max-width: 480px)
+{
+	.meet-partners .slider-wrapper
+	{
+		width: 100%;
 	}
 }
 

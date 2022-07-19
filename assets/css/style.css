@@ -1,3 +1,23 @@
+@font-face
+{
+	font-family: Metropolis-Black;
+	src: url('../fonts/metropolis/Metropolis-Black.otf');
+}
+@font-face
+{
+	font-family: Metropolis-Bold;
+	src: url('../fonts/metropolis/Metropolis-Bold.otf');
+}
+@font-face
+{
+	font-family: Metropolis-Regular;
+	src: url('../fonts/metropolis/Metropolis-Regular.otf');
+}
+@font-face
+{
+	font-family: Silka-Regular;
+	src: url('../fonts/silka/Silka-Regular.otf');
+}
 :root
 {
 	--black: rgba(0, 0, 0, 0.8);
@@ -13,7 +33,7 @@
 }
 body
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Metropolis-Black;
 }
 header
 {
@@ -26,7 +46,7 @@ header
 .wrapper
 {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1080px;
 	margin: 0 auto;
 	padding: 0 40px;
 }
@@ -141,8 +161,8 @@ header .sidebar-nav nav ul
 }
 .hero h1
 {
-	max-width: 300px;
-	font-size: 80px;
+	max-width: 380px;
+	font-size: 108px;
 	font-weight: 900;
 	line-height: 100px;
 	color: #fff;
@@ -150,7 +170,7 @@ header .sidebar-nav nav ul
 .hero h1.bg-fill
 {
 	background: linear-gradient(to right, #030810, #1058e2);
-	padding: 0 10px;
+	padding: 10px;
 }
 .hero lottie-player
 {
@@ -160,8 +180,7 @@ header .sidebar-nav nav ul
 .about
 {
 	background: linear-gradient(to right, #fff, #f0efef);
-	padding: 40px 0;
-	margin: 60px 0;
+	padding: 100px 0;
 }
 .about .wrapper
 {
@@ -234,7 +253,7 @@ header .sidebar-nav nav ul
 }
 .about h1
 {
-	margin-bottom: 8px;
+	margin-bottom: 16px;
 }
 .about h1, .press-release h1, .meet-partners h1, .our-services h1,
 .contact-us .contact-box h1
@@ -245,6 +264,11 @@ header .sidebar-nav nav ul
 {
 	color: var(--black);
 }
+.about p
+{
+	font-family: Silka-Regular;
+	font-size: 18px;
+}
 h1 span
 {
 	color: var(--blue);
@@ -254,7 +278,7 @@ h1 span
 	position: relative;
 	background: url('../img/press-release-bg.png') center;
 	background-size: cover;
-	padding: 40px 0;
+	padding: 60px 0;
 }
 .press-release .wrapper
 {
@@ -317,8 +341,9 @@ h1 span
 }
 .meet-partners .slider-wrapper .slider
 {
+	width: 80%;
 	overflow: hidden;
-	margin-bottom: 20px;
+	margin: 0 auto 20px;
 }
 .meet-partners .slider-wrapper .slider .slides
 {
@@ -362,6 +387,7 @@ h1 span
 .our-services
 {
 	position: relative;
+	padding: 60px 0;
 }
 .our-services .our-services-bg
 {
@@ -378,10 +404,10 @@ h1 span
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 40px 0;
 }
 .our-services .card-wrapper
 {
+	width: 100%;
 	justify-content: center;
 	gap: 24px;
 }
@@ -425,7 +451,9 @@ h1 span
 }
 .our-services .card-wrapper .card ul li
 {
+	font-family: Metropolis-Regular;
 	font-size: 14px;
+	line-height: 22px;
 	list-style: none;
 }
 .our-services .card-wrapper .card ul li img
@@ -435,7 +463,7 @@ h1 span
 }
 .contact-us
 {
-	margin: 20px 0 60px;
+	margin-bottom: 60px;
 }
 .contact-us .wrapper
 {
@@ -444,23 +472,24 @@ h1 span
 }
 .contact-us .contact-box
 {
-	width: 600px;
+	width: 720px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 8px;
 	color: #fff;
 	background: url('../img/contact-box-bg.png') center;
 	background-size: cover;
 	border-radius: 16px;
 	padding: 24px;
 }
-.contact-us .contact-box h1
-{
-	line-height: 40px;
-}
 .contact-us .contact-box h2
 {
 	font-size: 28px;
+}
+.contact-us .contact-box h2, footer
+{
+	font-family: Metropolis-Bold;
 }
 .contact-us .contact-box img.arrow-next
 {
@@ -550,6 +579,10 @@ footer h4.copyright
 	.contact-us .contact-box h1
 	{
 		font-size: 36px;
+	}
+	.about p
+	{
+		font-size: 16px;
 	}
 	.meet-partners h1
 	{

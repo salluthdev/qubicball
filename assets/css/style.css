@@ -295,7 +295,7 @@ header .sidebar-nav nav ul
 .about p
 {
 	font-family: Silka-Regular;
-	font-size: 18px;
+	font-size: 19px;
 }
 h1 span
 {
@@ -306,7 +306,7 @@ h1 span
 	position: relative;
 	background: url('../img/press-release-bg.png') center;
 	background-size: cover;
-	padding: 60px 0;
+	padding: 60px 0 0;
 }
 .press-release .wrapper
 {
@@ -324,7 +324,6 @@ h1 span
 {
 	display: flex;
 	gap: 32px;
-	flex-wrap: wrap;
 	margin-top: 40px;
 }
 .press-release .card-wrapper .card
@@ -335,8 +334,8 @@ h1 span
 	align-items: center;
 	gap: 24px;
 	background: #fff;
-	border-radius: 28px;
-	padding: 40px 24px;
+	border-radius: 28px 28px 0 0;
+	padding: 40px 24px 80px;
 	margin: 0 auto;
 }
 .press-release .card-wrapper .card h2
@@ -405,7 +404,7 @@ h1 span
   display: inline-block;
   background: #d3d3d3;
   border-radius: 50%;
-  padding: 8px;
+  padding: 7px;
   margin: 10px 5px;
 }
 .meet-partners .slider-wrapper .active
@@ -437,20 +436,21 @@ h1 span
 {
 	width: 100%;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 24px;
 }
 .our-services .card-wrapper .card
 {
 	width: 100%;
-	max-width: 300px;
-	min-height: 400px;
+	max-width: 316px;
+	height: 400px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background: #fff;
 	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2), 1px 1px 12px rgba(0, 0, 0, 0.2);
 	border-radius: 24px;
-	padding: 24px;
+	padding: 24px 40px;
 }
 .our-services .card-wrapper .card:hover
 {
@@ -634,6 +634,21 @@ footer h4.copyright
 		font-weight: 500;
 	}
 }
+
+@media (max-width: 567px)
+{
+	.press-release .card-wrapper
+	{
+		flex-direction: column;
+		gap: unset;
+	}
+	.press-release .card-wrapper .card:last-child
+	{
+		border-radius: unset;
+		padding-top: unset;
+	}
+}
+
 @media (max-width: 480px)
 {
 	.meet-partners .slider-wrapper

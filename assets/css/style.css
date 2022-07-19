@@ -164,12 +164,17 @@ header .sidebar-nav nav ul
 .hero
 {
 	width: 100%;
-	min-height: 600px;
 	display: flex;
 	align-items: center;
 	background: url(../img/hero-bg.png) center;
 	background-size: cover;
 	padding: 126px 0 40px;
+}
+.section
+{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
 }
 .hero .wrapper
 {
@@ -331,17 +336,18 @@ h1 span
 	gap: 24px;
 	background: #fff;
 	border-radius: 28px;
-	padding: 24px;
+	padding: 40px 24px;
 	margin: 0 auto;
 }
 .press-release .card-wrapper .card h2
 {
 	text-align: center;
 	color: var(--darkblue);
+	margin-bottom: 8px;
 }
 .press-release .card-wrapper .card img
 {
-	width: 86px;
+	width: 92px;
 }
 .meet-partners
 {

@@ -114,11 +114,15 @@ header nav ul li a:hover
 {
 	color: var(--blue);
 }
-header .toggle-nav .fa-solid
+header .toggle-nav .fa-xmark, header.scroll .toggle-nav .fa-bars
 {
 	color: var(--blue);
 	cursor: pointer;
 } 
+header .toggle-nav .fa-bars
+{
+	color: #fff;
+}
 header .sidebar-nav
 {
 	width: 240px;
@@ -557,6 +561,10 @@ footer h4.copyright
 	header nav
 	{
 		display: none;
+	}
+	header nav ul li a
+	{
+		color: var(--blue);
 	}
 	.hero .wrapper
 	{

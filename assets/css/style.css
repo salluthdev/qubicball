@@ -539,8 +539,18 @@ footer .brand-info
 {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	gap: 12px;
 	color: #fff;
+}
+footer .brand-info a
+{
+	text-decoration: none;
+	color: #fff;
+}
+footer .brand-info a:hover
+{
+	text-decoration: underline;
 }
 footer .brand-info div
 {

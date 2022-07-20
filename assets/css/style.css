@@ -306,7 +306,6 @@ h1 span
 	position: relative;
 	background: url('../img/press-release-bg.png') center;
 	background-size: cover;
-	padding: 60px 0 0;
 }
 .press-release .wrapper
 {
@@ -314,6 +313,7 @@ h1 span
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 100px;
 }
 .press-release h1, .meet-partners h1, .our-services h1, .contact-us .contact-box h1
 {
@@ -418,7 +418,7 @@ h1 span
 .our-services
 {
 	position: relative;
-	padding: 60px 0;
+	padding: 100px 0;
 }
 .our-services .our-services-bg
 {

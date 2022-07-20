@@ -516,6 +516,10 @@ h1 span
 	display: flex;
 	justify-content: center;
 }
+.contact-us a
+{
+	text-decoration: none;
+}
 .contact-us .contact-box
 {
 	width: 720px;

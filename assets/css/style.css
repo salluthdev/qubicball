@@ -69,7 +69,7 @@ header .logo, header nav ul
 }
 header .logo .logo-img
 {
-	width: 58px;
+	width: 60px;
 }
 header .logo .logo-text.white
 {
@@ -108,7 +108,7 @@ header nav ul li a
 }
 header.scroll nav ul li a
 {
-	color: var(--blue);
+	color: var(--black);
 	transition: 0.2s;
 }
 header nav ul li a:hover
@@ -208,8 +208,9 @@ header .sidebar-nav nav ul
 }
 .about
 {
+	min-height: calc(100vh - 100px);
 	background: linear-gradient(to right, #fff, #f0efef);
-	padding: 100px 0;
+	padding: 100px 0 0;
 }
 .about .wrapper
 {
@@ -293,14 +294,15 @@ header .sidebar-nav nav ul
 {
 	color: var(--black);
 }
-.about p
-{
-	font-family: Silka-Regular;
-	font-size: 19px;
-}
 h1 span
 {
 	color: var(--blue);
+}
+.about p
+{
+	font-family: Silka-Regular;
+	font-size: 18px;
+	line-height: 28px;
 }
 .press-release
 {
@@ -308,13 +310,23 @@ h1 span
 	background: url('../img/press-release-bg.png') center;
 	background-size: cover;
 }
+.blank
+{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+}
+.blank.gradient
+{
+	background: linear-gradient(to right, #fff, #f0efef);
+}
 .press-release .wrapper
 {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 100px;
+	padding-top: 80px;
 }
 .press-release h1, .meet-partners h1, .our-services h1, .contact-us .contact-box h1
 {
@@ -355,6 +367,7 @@ h1 span
 }
 .meet-partners
 {
+	min-height: calc(100vh - 100px);
 	padding: 80px 0;
 }
 .meet-partners .wrapper
@@ -370,12 +383,12 @@ h1 span
 .meet-partners .slider-wrapper
 {
 	width: 80%;
-	margin-top: 40px;
+	margin-top: 60px;
 }
 .meet-partners .slider-wrapper .slider
 {
 	overflow: hidden;
-	margin: 0 auto 20px;
+	margin: 0 auto 40px;
 }
 .meet-partners .slider-wrapper .slider .slides
 {
@@ -419,14 +432,14 @@ h1 span
 .our-services
 {
 	position: relative;
-	padding: 100px 0;
+	padding: 80px 0;
 }
 .our-services .our-services-bg
 {
 	width: 100%;
 	min-height: 300px;
 	position: absolute;
-	top: 0;
+	top: 100px;
 	left: 0;
 	background: url('../img/our-services-bg.png');
 }
@@ -468,7 +481,7 @@ h1 span
 .our-services .card-wrapper .card h2
 {
 	font-size: 28px;
-	line-height: 20px;
+	line-height: 24px;
 	color: var(--blue);
 	margin-top: 16px;
 }
@@ -573,6 +586,186 @@ footer h4.copyright
 {
 	color: rgba(228, 228, 228, 0.5);
 	margin-top: 20px;
+}
+
+@media (min-width: 1400px)
+{
+	header .wrapper
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 14px 40px;
+	}
+	header .logo, header nav ul
+	{
+		display: flex;
+		align-items: center;
+	}
+	header .logo .logo-img
+	{
+		width: 68px;
+	}
+	header .logo .logo-text.white
+	{
+		width: 240px;
+		margin-left: -24px;
+	}
+	header .logo .logo-text.blue
+	{
+		width: 176px;
+		margin-left: 10px;
+	}
+	header nav ul
+	{
+		gap: 48px;
+	}
+	header nav ul li
+	{
+		font-size: 21px;
+	}
+	.wrapper
+	{
+		min-width: 1280px;
+	}
+	.hero h1
+	{
+		max-width: 500px;
+		font-size: 140px;
+		line-height: 140px;
+	}
+	.hero lottie-player
+	{
+		width: 600px;
+		height: 600px;
+	}
+	.about .wrapper
+	{
+		gap: 60px;
+	}
+	.about .img-about, .about .img-about img
+	{
+		width: 480px;
+	}
+	.about .img-about .layer-bg
+	{
+		width: 380px;
+		height: 442px;
+	}
+	.about .img-about .layer-bg, .about .img-about .layer-blue-left,
+	.about .img-about .layer-blue-top-left
+	{
+		top: -40px;
+		left: -68px;
+	}
+	.about .img-about .layer-blue-bottom-right
+	{
+		width: 56px;
+		height: 56px;
+	}
+	.about .img-about .layer-blue-left
+	{
+		width: 112px;
+		height: 442px;
+	}
+	.about .img-about .layer-blue-top-left
+	{
+		width: 112px;
+		height: 41px;
+	}
+	.about h1
+	{
+		margin-bottom: 16px;
+	}
+	.about h1, .press-release h1, .meet-partners h1, .our-services h1,
+	.contact-us .contact-box h1
+	{
+		font-size: 60px;
+	}
+	.about p
+	{
+		font-size: 21px;
+		line-height: 32px;
+	}
+	.press-release .card-wrapper
+	{
+		margin-top: 60px;
+	}
+	.press-release .card-wrapper, .our-services .card-wrapper
+	{
+		gap: 40px;
+	}
+	.press-release .card-wrapper .card
+	{
+		width: 280px;
+		gap: 28px;
+		padding: 60px 24px 100px;
+	}
+	.press-release .card-wrapper .card h2
+	{
+		font-size: 32px;
+	}
+	.press-release .card-wrapper .card img
+	{
+		width: 120px;
+	}
+	.meet-partners .slider-wrapper .dot
+	{
+		padding: 8px;
+	}
+	.our-services .our-services-bg
+	{
+		min-height: 400px;
+	}
+	.our-services .card-wrapper
+	{
+		gap: 40px;
+	}
+	.our-services .card-wrapper .card
+	{
+		width: 100%;
+		max-width: 356px;
+		min-height: 436px;
+		padding: 28px 44px;
+	}
+	.our-services .card-wrapper .card img
+	{
+		width: 48px;
+	}
+	.our-services .card-wrapper .card h2
+	{
+		font-size: 32px;
+		line-height: 26px;
+		margin-top: 18px;
+	}
+	.our-services .card-wrapper .card h4
+	{
+		font-size: 18px;
+	}
+	.our-services .card-wrapper .card ul li
+	{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.our-services .card-wrapper .card ul li img
+	{
+		width: 12px;
+		margin-right: 8px;
+	}
+	.contact-us .contact-box
+	{
+		width: 800px;
+		gap: 10px;
+	}
+	.contact-us .contact-box h2
+	{
+		font-size: 32px;
+	}
+	.contact-us .contact-box img.arrow-next
+	{
+		width: 40px;
+		margin-top: 8px;
+	}
 }
 
 @media (min-width: 876px)

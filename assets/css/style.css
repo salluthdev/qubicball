@@ -348,6 +348,10 @@ h1 span
 {
 	width: 92px;
 }
+.press-release .card-wrapper hr
+{
+	display: none;
+}
 .meet-partners
 {
 	padding: 80px 0;
@@ -641,11 +645,21 @@ footer h4.copyright
 	{
 		flex-direction: column;
 		gap: unset;
+		background: #fff;
+		border-radius: 24px 24px 0 0;
+	}
+	.press-release .card-wrapper .card:first-child
+	{
+		padding-bottom: 40px;
+	}
+	.press-release .card-wrapper hr
+	{
+		display: block;
 	}
 	.press-release .card-wrapper .card:last-child
 	{
 		border-radius: unset;
-		padding-top: unset;
+		padding-top: 40px;
 	}
 }
 

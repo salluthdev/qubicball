@@ -109,10 +109,11 @@ header nav ul li a
 header.scroll nav ul li a
 {
 	color: var(--blue);
+	transition: 0.2s;
 }
 header nav ul li a:hover
 {
-	color: var(--blue);
+	text-decoration: underline;
 }
 header .toggle-nav .fa-xmark, header.scroll .toggle-nav .fa-bars
 {
@@ -447,7 +448,7 @@ h1 span
 {
 	width: 100%;
 	max-width: 316px;
-	height: 400px;
+	min-height: 400px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -514,6 +515,12 @@ h1 span
 	background-size: cover;
 	border-radius: 16px;
 	padding: 24px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.contact-us .contact-box:hover
+{
+	transform: scale(1.04);
 }
 .contact-us .contact-box h2
 {

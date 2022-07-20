@@ -307,7 +307,7 @@ h1 span
 .press-release
 {
 	position: relative;
-	background: url('../img/press-release-bg.png') center;
+	background: url('../img/press-release-bg.jpg') center;
 	background-size: cover;
 }
 .blank
@@ -441,7 +441,7 @@ h1 span
 	position: absolute;
 	top: 100px;
 	left: 0;
-	background: url('../img/our-services-bg.png');
+	background: url('../img/our-services-bg.jpg');
 }
 .our-services .wrapper
 {
@@ -550,7 +550,7 @@ h1 span
 }
 footer
 {
-	background: url('../img/footer-bg.png') center;
+	background: url('../img/footer-bg.jpg') center;
 	background-size: cover;
 	padding: 60px 0;
 }

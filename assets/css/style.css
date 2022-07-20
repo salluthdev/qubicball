@@ -574,7 +574,7 @@ footer h4.copyright
 	}
 	header nav ul li a
 	{
-		color: var(--blue);
+		color: var(--black);
 	}
 	.hero .wrapper
 	{
@@ -610,6 +610,10 @@ footer h4.copyright
 	.about .wrapper
 	{
 		flex-direction: column;
+	}
+	.about h1
+	{
+		margin-top: 24px;
 	}
 	.about h1, .press-release h1, .meet-partners h1, .our-services h1, 
 	.contact-us .contact-box h1

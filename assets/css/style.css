@@ -550,7 +550,6 @@ h1 span
 }
 footer
 {
-	min-height: 240px;
 	background: url('../img/footer-bg.png') center;
 	background-size: cover;
 	padding: 60px 0;
@@ -765,6 +764,26 @@ footer h4.copyright
 	{
 		width: 40px;
 		margin-top: 8px;
+	}
+	footer .brand-info
+	{
+		gap: 14px;
+	}
+	footer .brand-info div
+	{
+		gap: 18px;
+	}
+	footer .brand-info div img
+	{
+		width: 32px;
+	}
+	footer h4
+	{
+		font-size: 18px;
+	}
+	footer h4.copyright
+	{
+		margin-top: 24px;
 	}
 }
 
